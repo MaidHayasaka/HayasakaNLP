@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import io.github.usbharu.nlp.instructions.ParsedInstructions;
 import org.junit.jupiter.api.Test;
 
-class NLPTest {
+abstract class NLPTest {
 
   NLP nlp;
 
