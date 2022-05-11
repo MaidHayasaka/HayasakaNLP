@@ -10,7 +10,7 @@ abstract class SentenceFormatterTest {
 
   @Test
   void format() {
-    String format = sentenceFormatter.format("コンニチハ");
-    assertEquals("こんにちは", format);
+    String format = sentenceFormatter.format("コンニチハ👩🏻🧑😚☺😶🧈🥪🥠🦼🚝🚠💌☮🛐💚㊙🆎❎2️⏸🔽⏫");
+    assertEquals("こんにちは2", format);
   }
 }
