@@ -1,12 +1,12 @@
 package io.github.usbharu.nlp;
 
-import io.github.usbharu.nlp.instructions.ParsedInstructions;
+import io.github.usbharu.nlp.format.SentenceFormatter;
+import io.github.usbharu.nlp.parse.Parser;
+import io.github.usbharu.nlp.unify.Unifier;
 
-public class HayasakaNLP implements NLP {
+public class HayasakaNLP extends AbstractNLP {
 
-  @Override
-
-  public ParsedInstructions parse(String input) {
-    return null;
+  public HayasakaNLP(SentenceFormatter formatter, Unifier unifier, Parser parser) {
+    super(formatter, unifier, parser);
   }
 }
