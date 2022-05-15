@@ -13,10 +13,11 @@ abstract class VerbSearcherTest {
 
   @Test
   void search() {
-    List<String> verbs = List.of("する");
-    List<String> targets = List.of("仕事");
-    SearchedVerb search = verbSearcher.search(
-        List.of(new DefaultInstructions(verbs, targets, new ArrayList<>())), "仕事をする");
+    List<String> verbs = List.of("おしえる", "する", "つける", "けす");
+    List<String> targets = List.of("電気", "仕事");
+    SearchedVerb search =
+        verbSearcher.search(List.of(new DefaultInstructions(verbs, targets, new ArrayList<>())),
+            "仕事をする");
     assertNotNull(search);
     assertNotNull(search.getVerb());
     assertEquals("する", search.getVerb());
