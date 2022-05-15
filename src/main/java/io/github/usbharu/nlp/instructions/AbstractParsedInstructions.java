@@ -13,7 +13,7 @@ public abstract class AbstractParsedInstructions implements ParsedInstructions {
   private final List<ParsedModifier> parsedModifiers;
 
 
-  public AbstractParsedInstructions(String inputSentence, String formattedSentence,
+  protected AbstractParsedInstructions(String inputSentence, String formattedSentence,
       String unifiedSentence, Instructions instructions, String verb, String target,
       List<ParsedModifier> parsedModifiers) {
     this.inputSentence = inputSentence;

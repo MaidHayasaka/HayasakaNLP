@@ -1,6 +1,6 @@
 package io.github.usbharu.nlp.parse;
 
-import io.github.usbharu.nlp.instructions.AbstractParsedInstructions;
+import io.github.usbharu.nlp.instructions.DefaultParsedInstructions;
 import io.github.usbharu.nlp.instructions.Instructions;
 import io.github.usbharu.nlp.instructions.ParsedInstructions;
 import io.github.usbharu.nlp.parse.target.SearchedTarget;
@@ -20,7 +20,7 @@ public abstract class AbstractParser implements Parser {
 
   private final List<Instructions> instructions;
 
-  public AbstractParser(String inputSentence, String formattedSentence,
+  protected AbstractParser(String inputSentence, String formattedSentence,
       TargetSearcher targetSearcher, VerbSearcher verbSearcher,
       List<Instructions> instructions) {
     this.inputSentence = inputSentence;
@@ -38,7 +38,7 @@ public abstract class AbstractParser implements Parser {
     SearchedTarget searchTarget =
         targetSearcher.search(instructions1, unifiedSentence, search.getVerb());
     searchTarget.getTarget();
-    return new AbstractParsedInstructions(inputSentence, formattedSentence, unifiedSentence,
+    return new DefaultParsedInstructions(inputSentence, formattedSentence, unifiedSentence,
         searchTarget.getInstructions(), search.getVerb(), searchTarget.getTarget(),
         new ArrayList<>()) {
     };

@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 public class DefaultSentenceFormatter
     implements SentenceFormatter {
 
-  private final Logger logger = LoggerFactory.getLogger(DefaultSentenceFormatter.class);
+  private final Logger logger = LoggerFactory.getLogger(getClass());
 
   @Override
   public String format(String sentence) {

@@ -1,16 +1,25 @@
 package io.github.usbharu.nlp.parse.verb;
 
+import static org.junit.jupiter.api.Assertions.*;
+
+import io.github.usbharu.nlp.instructions.DefaultInstructions;
+import java.util.ArrayList;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 
 abstract class VerbSearcherTest {
 
-  VerbSearcher verbSearcher;
+  protected VerbSearcher verbSearcher;
 
   @Test
   void search() {
-//    SearchedVerb search = verbSearcher.search();
-//    assertNotNull(search);
-//    assertNotNull(search.getVerb());
-//    assertNotEquals(0, search.getVerb().length());
+    List<String> verbs = List.of("する");
+    List<String> targets = List.of("仕事");
+    SearchedVerb search = verbSearcher.search(
+        List.of(new DefaultInstructions(verbs, targets, new ArrayList<>())), "仕事をする");
+    assertNotNull(search);
+    assertNotNull(search.getVerb());
+    assertEquals("する", search.getVerb());
+    assertNotEquals(0, search.getVerb().length());
   }
 }

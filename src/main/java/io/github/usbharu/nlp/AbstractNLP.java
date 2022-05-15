@@ -11,7 +11,7 @@ public abstract class AbstractNLP implements NLP {
   private final Unifier unifier;
   private final Parser parser;
 
-  public AbstractNLP(SentenceFormatter formatter, Unifier unifier, Parser parser) {
+  protected AbstractNLP(SentenceFormatter formatter, Unifier unifier, Parser parser) {
     this.formatter = formatter;
     this.unifier = unifier;
     this.parser = parser;
