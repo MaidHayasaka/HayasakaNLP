@@ -1,0 +1,69 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.github.usbharu",
+    "module": "HayasakaNLP",
+    "version": "0.1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "HayasakaNLP-0.1.0.jar",
+          "url": "HayasakaNLP-0.1.0.jar",
+          "size": 18108,
+          "sha512": "97e1adfd7ddf52ea7ba274763289206a9e311a3b6a3003f32673a65d60b388d3ddba301f6f81ba68b8fe179dee01cafa6782290c9b2fb39ee27e961f5747ac4b",
+          "sha256": "93b9656fe04a1b23139cfe3b5877032fbddafb5505df0b5017ee9580a8ea9cc4",
+          "sha1": "c8f3eb659d59d4a3a370015ed42fb19da7080512",
+          "md5": "1bdff38614daf6d25f35f0c8e437548d"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.slf4j",
+          "module": "slf4j-api",
+          "version": {
+            "requires": "1.7.36"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "HayasakaNLP-0.1.0.jar",
+          "url": "HayasakaNLP-0.1.0.jar",
+          "size": 18108,
+          "sha512": "97e1adfd7ddf52ea7ba274763289206a9e311a3b6a3003f32673a65d60b388d3ddba301f6f81ba68b8fe179dee01cafa6782290c9b2fb39ee27e961f5747ac4b",
+          "sha256": "93b9656fe04a1b23139cfe3b5877032fbddafb5505df0b5017ee9580a8ea9cc4",
+          "sha1": "c8f3eb659d59d4a3a370015ed42fb19da7080512",
+          "md5": "1bdff38614daf6d25f35f0c8e437548d"
+        }
+      ]
+    }
+  ]
+}
