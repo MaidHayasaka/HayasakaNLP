@@ -23,5 +23,5 @@ test {
 gitRelease {
     groupId = "io.github.usbharu"
     artifactId = "HayasakaNLP"
-    repoUri = "https://github.com:MaidHayasaka/HayasakaNLP.git"
+    repoUri = "https://github.com/MaidHayasaka/HayasakaNLP.git"
 }
